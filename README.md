@@ -2,6 +2,7 @@
 
 ## Overview
 This project involves developing a comprehensive UVM-based verification environment to validate the functionality of a YAPP (Yet Another Packet Protocol) router. The YAPP router receives packets on a single input port and routes them to one of three output channels based on a specified protocol. This README provides details about the YAPP router's specifications, verification methodology, and implemented features.
+
 ![image](https://github.com/user-attachments/assets/68bc7c14-0101-49be-8f32-8270ef0c4879)
 
 ## Router Specifications
@@ -13,6 +14,7 @@ Each packet includes:
   - An address of 3 is considered illegal.
 - **Payload**: 1–63 bytes of data.
 - **Parity Byte**: Even-bit parity calculated over the header and payload bytes.
+
 ![image](https://github.com/user-attachments/assets/93db5d4b-9815-4dfc-bf9d-2ffb9ae8dca2)
 
 ### Input Port Protocol
@@ -44,6 +46,7 @@ The verification environment is developed using the UVM framework to simulate an
 - FIFO buffer handling for each output channel.
 - Host interface read/write operations and register programming.
 - Parity and length error detection and response validation.
+
 ![image](https://github.com/user-attachments/assets/41edc67c-2816-4993-87a9-0aeebc43fc86)
 
 ### Testbench Architecture Diagram
